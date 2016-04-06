@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NumberPushers</string>
+    <string name="title">Learning Numbers</string>
+    <string name="instructions">Click on the number you think is largest</string>
+    <string name="correct">Correct! :)</string>
+    <string name="wrong">That is Incorrect! :(</string>
+    <string name="button1">X</string>
+    <string name="button2">Y</string>
+    <string name="score_text">SCORE:</string>
+    <string name="score">0</string>
+</resources>
