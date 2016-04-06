@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
     private int value1;
     private int value2;
     private int score = 0;
+    private int tries = 0;
     private TextView points;
+    private TextView attempts;
 
 
     @Override
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Instantiate points display
         points = (TextView)findViewById(R.id.point_display);
-
+        attempts = (TextView)findViewById(R.id.attempt_display);
         //Create initial random number set
         GenerateNumbers();
 
@@ -86,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         //TOAST!
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+        UpdateAttempts();
         GenerateNumbers();
     }
 
@@ -125,4 +128,13 @@ public class MainActivity extends AppCompatActivity {
         points.setText(val);
     }
 
+    /**
+     * Update Attempts
+     */
+    public void UpdateAttempts(){
+        String val;
+        tries++;
+        val = String.valueOf(tries);
+        attempts.setText(val);
+    }
 }
